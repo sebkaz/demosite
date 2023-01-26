@@ -146,10 +146,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link active" href="./index.html" aria-current="page">
  <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">
- <span class="menu-text">about.html</span></a>
-  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -165,7 +161,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">introduction</a></li>
+  <li><a href="#introduction-in-r" id="toc-introduction-in-r" class="nav-link active" data-scroll-target="#introduction-in-r">introduction in R</a></li>
+  <li><a href="#introduction-in-python" id="toc-introduction-in-python" class="nav-link" data-scroll-target="#introduction-in-python">Introduction in python</a></li>
+  <li><a href="#introduction-in-julia" id="toc-introduction-in-julia" class="nav-link" data-scroll-target="#introduction-in-julia">introduction in Julia</a></li>
   </ul>
 </nav>
     </div>
@@ -189,9 +187,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="introduction" class="level1">
-<h1>introduction</h1>
-<p>For a demonstration of a line plot on a polar axis, see</p>
+<section id="introduction-in-r" class="level1">
+<h1>introduction in R</h1>
+<p>R code example</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">1</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -199,140 +197,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="introduction-in-python" class="level1">
+<h1>Introduction in python</h1>
+<p>simple example in python code</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import numpy as np</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#import matplotlib.pyplot as plt</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels.discrete.discrete_model <span class="im">import</span> Probit</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"data/Mroz.csv"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"to jest kod pythonowy"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   Unnamed: 0  lfp  k5  k618  age   wc  hc       lwg        inc
-0           1  yes   1     0   32   no  no  1.210165  10.910001
-1           2  yes   0     2   30   no  no  0.328504  19.500000
-2           3  yes   1     3   35   no  no  1.514128  12.039999
-3           4  yes   0     3   34   no  no  0.092115   6.800000
-4           5  yes   1     2   31  yes  no  1.524280  20.100000</code></pre>
+<pre><code>to jest kod pythonowy</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.info())</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># data cleaning</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># transformacja zmiennych </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">4</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 753 entries, 0 to 752
-Data columns (total 9 columns):
- #   Column      Non-Null Count  Dtype  
----  ------      --------------  -----  
- 0   Unnamed: 0  753 non-null    int64  
- 1   lfp         753 non-null    object 
- 2   k5          753 non-null    int64  
- 3   k618        753 non-null    int64  
- 4   age         753 non-null    int64  
- 5   wc          753 non-null    object 
- 6   hc          753 non-null    object 
- 7   lwg         753 non-null    float64
- 8   inc         753 non-null    float64
-dtypes: float64(2), int64(4), object(3)
-memory usage: 53.1+ KB
-None</code></pre>
+<pre><code>6</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop(df.columns[<span class="dv">0</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"lfp"</span>] <span class="op">=</span> df[<span class="st">"lfp"</span>] <span class="op">==</span> <span class="st">"yes"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"wc"</span>] <span class="op">=</span> df[<span class="st">"wc"</span>] <span class="op">==</span> <span class="st">"yes"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hc"</span>] <span class="op">=</span> df[<span class="st">"hc"</span>] <span class="op">==</span> <span class="st">"yes"</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.info())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>d.mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 753 entries, 0 to 752
-Data columns (total 8 columns):
- #   Column  Non-Null Count  Dtype  
----  ------  --------------  -----  
- 0   lfp     753 non-null    bool   
- 1   k5      753 non-null    int64  
- 2   k618    753 non-null    int64  
- 3   age     753 non-null    int64  
- 4   wc      753 non-null    bool   
- 5   hc      753 non-null    bool   
- 6   lwg     753 non-null    float64
- 7   inc     753 non-null    float64
-dtypes: bool(3), float64(2), int64(3)
-memory usage: 31.7 KB
-None</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># summary statistics</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>    lfp  k5  k618  age     wc     hc       lwg        inc
-0  True   1     0   32  False  False  1.210165  10.910001
-1  True   0     2   30  False  False  0.328504  19.500000
-2  True   1     3   35  False  False  1.514128  12.039999
-3  True   0     3   34  False  False  0.092115   6.800000
-4  True   1     2   31   True  False  1.524280  20.100000</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># probit regression fit </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>               k5        k618         age         lwg         inc
-count  753.000000  753.000000  753.000000  753.000000  753.000000
-mean     0.237716    1.353254   42.537849    1.097115   20.128965
-std      0.523959    1.319874    8.072574    0.587556   11.634799
-min      0.000000    0.000000   30.000000   -2.054124   -0.029000
-25%      0.000000    0.000000   36.000000    0.818087   13.025000
-50%      0.000000    1.000000   43.000000    1.068403   17.700001
-75%      0.000000    2.000000   49.000000    1.399717   24.466000
-max      3.000000    8.000000   60.000000    3.218876   96.000000</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">"lfp"</span>]</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(<span class="st">"lfp"</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> sm.add_constant(X)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> Probit(y, X.astype(<span class="bu">float</span>))</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>probit_model <span class="op">=</span> model.fit()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Optimization terminated successfully.
-         Current function value: 0.601189
-         Iterations 5</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(probit_model.summary())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                          Probit Regression Results                           
-==============================================================================
-Dep. Variable:                    lfp   No. Observations:                  753
-Model:                         Probit   Df Residuals:                      745
-Method:                           MLE   Df Model:                            7
-Date:                czw, 26 sty 2023   Pseudo R-squ.:                  0.1208
-Time:                        23:26:25   Log-Likelihood:                -452.69
-converged:                       True   LL-Null:                       -514.87
-Covariance Type:            nonrobust   LLR p-value:                 9.471e-24
-==============================================================================
-                 coef    std err          z      P&gt;|z|      [0.025      0.975]
-------------------------------------------------------------------------------
-const          1.9184      0.381      5.040      0.000       1.172       2.664
-k5            -0.8747      0.114     -7.703      0.000      -1.097      -0.652
-k618          -0.0386      0.040     -0.953      0.340      -0.118       0.041
-age           -0.0378      0.008     -4.971      0.000      -0.053      -0.023
-wc             0.4883      0.135      3.604      0.000       0.223       0.754
-hc             0.0572      0.124      0.461      0.645      -0.186       0.300
-lwg            0.3656      0.088      4.165      0.000       0.194       0.538
-inc           -0.0205      0.005     -4.297      0.000      -0.030      -0.011
-==============================================================================</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.crosstab(df[<span class="st">"lfp"</span>], df[<span class="st">"hc"</span>], margins <span class="op">=</span> <span class="va">True</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>hc     False  True  All
-lfp                    
-False    207   118  325
-True     251   177  428
-All      458   295  753</code></pre>
+<pre><code>2.0</code></pre>
 </div>
 </div>
+</section>
+<section id="introduction-in-julia" class="level1">
+<h1>introduction in Julia</h1>
+<p>Simple code in Julia language</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"test"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"test"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>test</code></pre>
 </div>
